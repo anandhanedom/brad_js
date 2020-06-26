@@ -6,7 +6,7 @@
 //   const error = true;
 
 //   if (!error) {
-//     const res = await promise; //wait unitl promise is resolved
+//     const res = await promise; //wait until promise is resolved
 //     return res;
 //   } else {
 //     await Promise.reject(new Error('Something went wrong!'));
@@ -27,3 +27,5 @@ async function getUsers() {
   //only proceed once the second promise is resolved
   return data;
 }
+
+getUsers().then((users) => console.log(users));
