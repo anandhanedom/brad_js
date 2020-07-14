@@ -58,6 +58,7 @@ header ul a {
 }
 
 .text-field {
+  overflow: hidden;
   width: 100%;
   min-height: 200px;
   border: 1px solid #e3e3e3;
@@ -92,11 +93,11 @@ header ul a {
   margin: auto;
 }
 
-.row.selected {
+.row.row-selected {
   background-color: #2986aa;
 }
 
-.btn.selected {
+.btn.btn-selected {
   background-color: #f92121;
   color: #fff;
 }
