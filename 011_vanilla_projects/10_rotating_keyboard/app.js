@@ -1,11 +1,12 @@
 const btns = document.querySelectorAll('.btn'); //buttons
 const rows = document.querySelectorAll('.row'); //rows
+const display = document.querySelector('.text-field'); //text
 
 let i = 0,
   row = 0;
 
 //Timer
-let timer = setInterval(onTick, 3000);
+let timer = setInterval(onTick, 2000);
 
 //toggle function
 function toggleFunction(i) {
@@ -20,6 +21,7 @@ function onTick() {
   if (row == 0) {
     rows[0].classList.add('row-selected');
     if (i < 12) {
+      // console.log(i);
       toggleFunction(i);
       i++;
     } else {
@@ -74,12 +76,18 @@ function onTick() {
   }
 }
 
+let text = '';
+
+function displayText() {
+  display.innerText = text;
+}
+
 //Click event listener
 window.addEventListener('click', () => {
   const btn = document.querySelector('.btn-selected');
   if (!btn.classList.contains('control')) {
-    const letter = btn.innerText;
-    console.log(letter);
+    text = text.concat(btn.innerText);
+    displayText();
   } else {
     if (btn.classList.contains('down')) {
       rows[row].classList.remove('row-selected');
