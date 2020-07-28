@@ -1,0 +1,32 @@
+function testSize(num) {
+  // Only change code below this line
+
+if(num>=0 && num<=4)
+{
+  return "Tiny";
+}
+
+else if(num>=5 && num<=8)
+{
+  return "Small";
+}
+
+else if(num>=10 && num<=14)
+{
+  return "Medium";
+}
+
+else if(num>=15 && num<=17)
+{
+  return "Large";
+}
+
+else {
+  return "Huge";
+}
+
+  return "Change Me";
+  // Only change code above this line
+}
+
+testSize(7);
