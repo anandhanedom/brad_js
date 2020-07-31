@@ -1,0 +1,22 @@
+**************** CHAPTER 1 ****************
+
+* if/else statements allow you to make decisions in your code.
+
+* while/for statements allow you to execute code many times by looping.
+
+**************** CHAPTER 2 ****************
+
+*  Math.random() => 0 to 0.99
+*  Math.random() * 5 => 0 to 4.99
+
+**************** CHAPTER 3 ****************
+
+* JavaScript is pass-by-value.
+
+* #1: what happens when we don’t pass enough arguments? Undefined for missing args.
+  #2: what happens when we pass too many argments? Extra args ignored.
+  #3: what happens when we have NO parameters? No worries.
+
+* If a variable is declared outside a function, it’s GLOBAL.
+  If it’s declared inside a function, it’s LOCAL.
+  GLOBAL can be shadowed by LOCAL.
