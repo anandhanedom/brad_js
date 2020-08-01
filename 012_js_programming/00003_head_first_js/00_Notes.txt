@@ -11,12 +11,40 @@
 
 **************** CHAPTER 3 ****************
 
-* JavaScript is pass-by-value.
+* JavaScript is 'pass-by-value'.
 
 * #1: what happens when we don’t pass enough arguments? Undefined for missing args.
   #2: what happens when we pass too many argments? Extra args ignored.
   #3: what happens when we have NO parameters? No worries.
 
-* If a variable is declared outside a function, it’s GLOBAL.
-  If it’s declared inside a function, it’s LOCAL.
-  GLOBAL can be shadowed by LOCAL.
+* If a variable is declared outside a function, it’s 'GLOBAL'.
+  If it’s declared inside a function, it’s 'LOCAL'.
+  'GLOBAL' can be shadowed by 'LOCAL'.
+
+**************** CHAPTER 4 ****************
+
+* Assigning a value to an item that doesn’t exist in the array will create a new
+  item in the array.
+
+* The 'while' loop is most often used when you don’t know how many times you need
+  to loop, and you’re looping until a condition is met. 
+  
+* The 'for' loop is most often used when you know the number of times the loop needs
+  to execute. 
+
+**************** CHAPTER 5 ****************
+
+* To delete a property: 'delete'. Eg. delete person.name
+
+* A 'primitive variable' represents the actual value of the variable while an 'object  
+  variable' represents a way to get to the object.
+
+* If you change a property of the object in a function, you’re changing the property
+  in the original object.
+
+* You can think of 'this' like a variable that is assigned to the object whose method was just called.
+
+* for (var prop in chevy) {
+ console.log(prop + ": " + chevy[prop]);
+}
+  
