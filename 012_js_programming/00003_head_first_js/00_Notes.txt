@@ -35,5 +35,16 @@
 **************** CHAPTER 5 ****************
 
 * To delete a property: 'delete'. Eg. delete person.name
+
 * A 'primitive variable' represents the actual value of the variable while an 'object  
   variable' represents a way to get to the object.
+
+* If you change a property of the object in a function, you’re changing the property
+  in the original object.
+
+* You can think of 'this' like a variable that is assigned to the object whose method was just called.
+
+* for (var prop in chevy) {
+ console.log(prop + ": " + chevy[prop]);
+}
+  
