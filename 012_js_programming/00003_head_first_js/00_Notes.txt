@@ -44,7 +44,10 @@
 
 * You can think of 'this' like a variable that is assigned to the object whose method was just called.
 
-* for (var prop in chevy) {
+* Looping through an object: for (var prop in chevy) {
  console.log(prop + ": " + chevy[prop]);
 }
+
+**************** CHAPTER 5 ****************
+
   
