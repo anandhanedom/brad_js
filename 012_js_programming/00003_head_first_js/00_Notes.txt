@@ -50,4 +50,12 @@
 
 **************** CHAPTER 6 ****************
 
-  
+* window.onload=init; //On load call back
+ 
+* You can get the value of an element’s attributes using the getAttribute method.
+  --planet.setAttribute("class", "redtext");
+
+* You can set the value of an element’s attributes using the setAttribute method.
+  --scoop.getAttribute("alt");  
+
+**************** CHAPTER 7 ****************
