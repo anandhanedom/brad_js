@@ -44,7 +44,34 @@
 
 * You can think of 'this' like a variable that is assigned to the object whose method was just called.
 
-* for (var prop in chevy) {
+* Looping through an object: for (var prop in chevy) {
  console.log(prop + ": " + chevy[prop]);
 }
-  
+
+**************** CHAPTER 6 ****************
+
+* window.onload=init; //On load call back
+ 
+* You can get the value of an element’s attributes using the getAttribute method.
+  --planet.setAttribute("class", "redtext");
+
+* You can set the value of an element’s attributes using the setAttribute method.
+  --scoop.getAttribute("alt");  
+
+**************** CHAPTER 7 ****************
+
+* typeof is an opertor.
+
+* typeof null = object. typeof undefined = undefined. typeof NaN=number. 
+
+* 0/0 is NaN. 100/0 is Infinity. typeof Infinity=number.
+
+* NaN != NaN. Use 'ifNaN()'.
+
+* undefined = null.
+
+* If you try to add a number and a string, JavaScript converts the number to a string
+  and concatenates the two.
+
+* For arithmetic operators—like multiplication, division and subtraction—
+  JS prefers to treat those as arithmetic operations, not string operations.
