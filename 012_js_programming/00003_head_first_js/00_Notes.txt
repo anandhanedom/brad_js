@@ -62,6 +62,8 @@
 
 * typeof is an opertor.
 
+* typeof [] is "object".
+
 * typeof null = object. typeof undefined = undefined. typeof NaN=number. 
 
 * 0/0 is NaN. 100/0 is Infinity. typeof Infinity=number.
@@ -75,3 +77,18 @@
 
 * For arithmetic operators—like multiplication, division and subtraction—
   JS prefers to treat those as arithmetic operations, not string operations.
+
+* 2 references are equal only if they reference the same object.
+
+* Falsies: undefined,null,0,empty string,NaN. Every thing else is 'truthy'.
+
+* String methods: 
+    string.trim();
+    string.toUpperCase(); 
+    string.charAt(i); //i > length => " "
+    string.indexOf(i); //nothing => -1
+    string.lastIndexOf(i); //nothing => -1
+    string.substring(i, j ) => i to j-1  ||  string.substring(i)
+    string.split("|"); //an array of splits
+  
+* Checkout:substring,slice,toLowerCase,lastIndexOf,match,concat,toUpperCase,replace
