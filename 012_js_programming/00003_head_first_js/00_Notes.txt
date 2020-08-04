@@ -59,3 +59,19 @@
   --scoop.getAttribute("alt");  
 
 **************** CHAPTER 7 ****************
+
+* typeof is an opertor.
+
+* typeof null = object. typeof undefined = undefined. typeof NaN=number. 
+
+* 0/0 is NaN. 100/0 is Infinity. typeof Infinity=number.
+
+* NaN != NaN. Use 'ifNaN()'.
+
+* undefined = null.
+
+* If you try to add a number and a string, JavaScript converts the number to a string
+  and concatenates the two.
+
+* For arithmetic operators—like multiplication, division and subtraction—
+  JS prefers to treat those as arithmetic operations, not string operations.
