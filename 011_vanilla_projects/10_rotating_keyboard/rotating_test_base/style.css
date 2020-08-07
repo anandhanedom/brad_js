@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #2b5877;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+}
+
+.text-field {
+  overflow: hidden;
+  padding: 2rem;
+  min-height: 200px;
+  background: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 2px -1px rgba(0, 0, 0, 0.5);
+}
+
+.text-field-container {
+  margin: 30px;
+}
+
+.btn {
+  height: 40px;
+  width: 40px;
+  margin: 3px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #969595;
+  color: #1e1e1e;
+  box-shadow: 0 3px 2px -1px rgba(0, 0, 0, 0.4);
+  /* transition: background 0.1s ease-in-out; */
+}
+
+.keyboard {
+  background: #cfd6dc;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.row {
+  display: flex;
+  font-size: 20px;
+  border-radius: 10px;
+  margin: 5px;
+  transition: background 0.2s ease-in-out;
+}
+
+.keyboard-container {
+  margin: 50px auto;
+  padding: 10px;
+}
+
+.btn-selected {
+  background: greenyellow;
+}
+
+.row-selected {
+  background: salmon;
+}
+
+.tap-container {
+  text-align: center;
+}
+
+.tap {
+  background: #fff;
+  display: inline-block;
+  text-align: center;
+  padding: 20px;
+  border-radius: 50%;
+  font-weight: 500;
+  box-shadow: 0 1px 1px -1px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.tap-color {
+  background: greenyellow;
+}
