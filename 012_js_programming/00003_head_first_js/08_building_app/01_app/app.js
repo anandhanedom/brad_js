@@ -23,9 +23,9 @@ var model = {
 
   //Our ships
   ships: [
-    { locations: ['10', '20', '30'], hits: ['', '', ''] },
-    { locations: ['32', '33', '34'], hits: ['', '', ''] },
-    { locations: ['63', '64', '65'], hits: ['', '', 'hit'] },
+    { locations: ['06', '16', '26'], hits: ['', '', ''] },
+    { locations: ['24', '34', '44'], hits: ['', '', ''] },
+    { locations: ['10', '11', '12'], hits: ['', '', ''] },
   ],
 
   //is Sunk? method
@@ -62,6 +62,17 @@ var model = {
 
     return false;
   },
+
+  generateShip: function () {
+    var direction = Math.floor(Math.random() * 2);
+    var row, col;
+
+    if (direction == 1) {
+      // Generate a starting location for a horizontal ship
+    } else {
+      // Generate a starting location for a vertical ship
+    }
+  },
 };
 
 //Validate guess
@@ -81,19 +92,83 @@ function parseGuess(guess) {
     } else if (
       row < 0 ||
       row >= model.boardSize ||
-      column < 0 ||
-      column >= model.boardSize
+      col < 0 ||
+      col >= model.boardSize
     ) {
       alert("Ooops, that's off the board!");
+    } else {
+      return row + col;
     }
   }
+  return null;
 }
 
 //Controller
 var controller = {
   guesses: 0,
-  processGuesses: function (guess) {},
+
+  //Process method
+  processGuess: function (guess) {
+    //Validate and return
+    var location = parseGuess(guess);
+    if (location) {
+      this.guesses++;
+      model.fire(location);
+      if (model.shipsSunk == model.numShips) {
+        view.displayMessage(
+          `You sank all my ships in ${this.guesses} guesses!`
+        );
+      }
+    }
+  },
 };
+
+function init() {
+  //Fire button and its event
+  var fireButton = document.getElementById('fireButton');
+  fireButton.onclick = handleFireButton;
+
+  //Guess input field and its event
+  var guessInput = document.getElementById('guessInput');
+  guessInput.onkeypress = handleKeyPress;
+}
+
+//Fire button call back
+function handleFireButton() {
+  var guessInput = document.getElementById('guessInput');
+  var guess = guessInput.value;
+  controller.processGuess(guess);
+  guessInput.value = '';
+}
+
+//Enter call back
+function handleKeyPress(e) {
+  var fireButton = document.getElementById('fireButton');
+  if (e.keyCode === 13) {
+    fireButton.click();
+    return false;
+  }
+}
+
+window.onload = init;
+
+// controller.processGuess('B0');
+// controller.processGuess('C0');
+// controller.processGuess('D0');
+// controller.processGuess('E0');
+// controller.processGuess('D2');
+// controller.processGuess('D3');
+// controller.processGuess('D4');
+// controller.processGuess('D5');
+// controller.processGuess('G3');
+// controller.processGuess('G4');
+// controller.processGuess('G5');
+
+// console.log(parseGuess('A0'));
+// console.log(parseGuess('B6'));
+// console.log(parseGuess('G3'));
+// console.log(parseGuess('H0'));
+// console.log(parseGuess('A7'));
 
 // model.fire('53');
 // model.fire('06');
