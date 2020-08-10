@@ -92,7 +92,6 @@ function parseGuess(guess) {
 //Controller
 var controller = {
   guesses: 0,
-
   processGuesses: function (guess) {},
 };
 
