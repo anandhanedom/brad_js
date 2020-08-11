@@ -92,3 +92,18 @@
     string.split("|"); //an array of splits
   
 * Checkout:substring,slice,toLowerCase,lastIndexOf,match,concat,toUpperCase,replace
+
+
+**************** CHAPTER 8 ****************
+
+* We organized the code using three objects: a model, a view, and a controller.
+* Each object in the game has one primary responsibility. 
+
+* The responsibility of the model is to store the state of the game and implement   
+  logic that modifies that state.
+
+* The responsibility of the view is to update the display when the state in the model 
+  changes.
+
+* The responsibility of the controller is to glue the game together, to make sure the 
+  player’s guess is sent to the model to update the state, and to check to see when the game is complete.
