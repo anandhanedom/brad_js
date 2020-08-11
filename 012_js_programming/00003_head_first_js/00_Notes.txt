@@ -107,3 +107,14 @@
 
 * The responsibility of the controller is to glue the game together, to make sure the 
   player’s guess is sent to the model to update the state, and to check to see when the game is complete.
+
+**************** CHAPTER 9 ****************
+
+* Callbacks disguised as 'HANDLERS'.
+
+* Beware of setInterval & setTimeout. 
+
+* onmousemove:  clientX, clientY,screenX, screenY,pageX, pageY
+
+* Checkout : click,resize,play,pause,load,unload,dragstart,drop,mousemove,mouseover,
+  keypress,mouseout,touchstart,touchend
