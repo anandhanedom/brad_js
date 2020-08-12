@@ -118,3 +118,16 @@
 
 * Checkout : click,resize,play,pause,load,unload,dragstart,drop,mousemove,mouseover,
   keypress,mouseout,touchstart,touchend
+
+**************** CHAPTER 10 ****************
+
+* With a function expression, a function is created at runtime(execution).
+
+* First class values can be passed,assigned or returned.
+
+* The array sort method takes a function that knows how to compare two values in an 
+  array.
+
+* The function you pass to the sort method should return one of these values: a number 
+  greater than 0, 0, or a number less than 0.
+
