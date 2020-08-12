@@ -131,3 +131,8 @@
 * The function you pass to the sort method should return one of these values: a number 
   greater than 0, 0, or a number less than 0.
 
+**************** CHAPTER 11 ****************
+* We can place 'function declarations' anywhere in our code. Function expressions may 
+  cause problems at times.
+
+* All local variables are stored in an environment.
