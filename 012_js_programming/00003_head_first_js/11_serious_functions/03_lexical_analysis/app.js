@@ -15,3 +15,13 @@ var result = innerFunction();
 
 console.log(result);
 console.log("Working from linux");
+
+function justSayin(phrase) {
+  var ending = "";
+  if (beingFunny) {
+    ending = " -- I'm just sayin!";
+  } else if (notSoMuch) {
+    ending = " -- Not so much.";
+  }
+  alert(phrase + ending);
+}

@@ -135,4 +135,15 @@
 * We can place 'function declarations' anywhere in our code. Function expressions may 
   cause problems at times.
 
-* All local variables are stored in an environment.
+* A "function declaration" is defined before the rest of your code is evaluated.
+
+* A "function expression" is evaluated at runtime with the rest of your code, and so is not defined until
+  the statement in which it appears is evaluated.
+
+* A free variable is one that isn't defined in the local scope.
+
+* When we have an environment that has a value for each of the free variables, we say that we’ve
+  closed the function. Here, fn + env = closure.  
+
+* The environment references the live variables being used by your code, so if a value is changed by code outside your
+  closure function, that new value is seen by your closure function when it is evaluated.
