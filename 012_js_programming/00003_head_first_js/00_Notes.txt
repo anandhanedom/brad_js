@@ -132,6 +132,7 @@
   greater than 0, 0, or a number less than 0.
 
 **************** CHAPTER 11 ****************
+
 * We can place 'function declarations' anywhere in our code. Function expressions may 
   cause problems at times.
 
@@ -147,3 +148,10 @@
 
 * The environment references the live variables being used by your code, so if a value is changed by code outside your
   closure function, that new value is seen by your closure function when it is evaluated.
+
+**************** CHAPTER 12 ****************
+
+* every method.
+* instanceof
+* When you use new with a constructor function call, it creates a new, empty object, which is assigned
+  to this within the body of the constructor.
