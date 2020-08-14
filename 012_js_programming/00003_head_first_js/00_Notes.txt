@@ -151,7 +151,14 @@
 
 **************** CHAPTER 12 ****************
 
-* every method.
+* every method
+
 * instanceof
+
 * When you use new with a constructor function call, it creates a new, empty object, which is assigned
   to this within the body of the constructor.
+
+* If you change any property in the prototype, it affects all the objects that inherit from that prototype, unless that object has
+  overridden that property. 
+
+* obj.hasOwnProperty('sitting') //prototypal or own 
