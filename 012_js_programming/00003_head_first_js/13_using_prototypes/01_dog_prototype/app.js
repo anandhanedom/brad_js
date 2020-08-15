@@ -27,6 +27,14 @@ Dog.prototype.wag = function () {
 };
 
 var fido = new Dog('Fido', 'Mixed', 38);
+
+if (fido instanceof Dog) {
+  console.log('Fido is a Dog');
+}
+if (fido instanceof ShowDog) {
+  console.log('Fido is a ShowDog');
+}
+
 var fluffy = new Dog('Fluffy', 'Poodle', 30);
 var spot = new Dog('Spot', 'Chihuahua', 10);
 
@@ -72,13 +80,12 @@ spot.sit();
 //New exercises
 
 function ShowDog(name, breed, weight, handler) {
-  this.name = name;
-  this.breed = breed;
-  this.weight = weight;
+  Dog.call(this, name, breed, weight); //handle with Dog constructor which is the parent
   this.handler = handler;
 }
 
 ShowDog.prototype = new Dog(); //prototypal inheritance
+ShowDog.prototype.constructor = ShowDog;
 
 ShowDog.prototype.league = 'Webville';
 
@@ -109,3 +116,13 @@ scooby.bark();
 console.log(scooby.league);
 console.log(scooby.species);
 scooby.run();
+
+if (scooby instanceof Dog) {
+  console.log('Scooby is a Dog');
+}
+if (scooby instanceof ShowDog) {
+  console.log('Scooby is a ShowDog');
+}
+
+console.log("Fido's constructor is " + fido.constructor);
+console.log("Scooby's constructor is " + scooby.constructor);
