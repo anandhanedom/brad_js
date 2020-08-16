@@ -151,9 +151,9 @@
 
 **************** CHAPTER 12 ****************
 
-* every method
+* "every" method
 
-* instanceof
+* fido instanceof Dog
 
 * When you use new with a constructor function call, it creates a new, empty object, which is assigned
   to this within the body of the constructor.
@@ -161,4 +161,31 @@
 * If you change any property in the prototype, it affects all the objects that inherit from that prototype, unless that object has
   overridden that property. 
 
-* obj.hasOwnProperty('sitting') //prototypal or own 
+* Use the hasOwnProperty method on an instance to find out if a property is defined in the instance. 
+  
+  obj.hasOwnProperty('sitting') //prototypal or own 
+
+* fido.constructor //display constructor fn.
+
+* Call can be used to invoke a function and specify the object to be used as this in the body of the function. 
+
+  function ShowDog(name, breed, weight, handler) {
+    Dog.call(this, name, breed, weight); 
+    this.handler = handler;
+  } 
+
+* console.log(hitler.toString()); //converting to string
+  console.log('This is:' + hitler);
+
+* Do not overrride: constructor
+                    hasOwnProperty
+                    isPrototypeOf
+                    propertyIsEnumerable
+
+* You may override these ones: toString
+                               toLocaleString
+                               valueOf
+
+* The arguments object contains every argument passed to your function, and it can be accessed in an array-like manner.
+
+*  You may want to use : reverse === this.valueOf()
