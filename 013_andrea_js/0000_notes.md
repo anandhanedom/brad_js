@@ -1,6 +1,6 @@
 # JS Manual
 
-### Avoid using these for optimising code
+### Avoid using these (for optimising code)
 
 1.  eval()
 2.  arguments
