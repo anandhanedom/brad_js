@@ -1,8 +1,6 @@
-const person1 = require('./person1');
-const person = require('./person');
-const Person = require('./person');
-
-const Logger = require('./logger');
+// const person1 = require('./person1');
+// const person = require('./person');
+// const Person = require('./person');
 
 // console.log('Hello from Node JS...');
 // console.log(person1);
@@ -12,10 +10,17 @@ const Logger = require('./logger');
 // console.log(adam);
 // console.log(adam.greeting());
 
-const logger = new Logger();
+const http = require('http');
+const path = require('path');
+const fs = require('fs');
 
-logger.on('message', (data) => {
-  console.log(`Called listener: `, data);
+const server = http.createServer((req, res) => {
+  if (req.url === '/') {
+    res.writeHead(200, { 'Content-Type': 'text/html' });
+    res.end('<h1>Home</h1>');
+  }
 });
 
-logger.log('Hello world!');
+const PORT = process.env.PORT || 5000;
+
+server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
