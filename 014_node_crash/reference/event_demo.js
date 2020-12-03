@@ -13,3 +13,5 @@ myEmitter.on('event', () => {
 
 //Init event
 myEmitter.emit('event');
+myEmitter.emit('event');
+myEmitter.emit('event');
