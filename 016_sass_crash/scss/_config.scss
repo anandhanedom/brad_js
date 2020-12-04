@@ -1,0 +1,17 @@
+//Partial - not compiled into style.css because of _
+
+//Variables
+$light-color: #f4f4f4;
+$font-stack: Arial, Helvetica, sans-serif;
+// $primary-color: #0e6cff;
+$primary-color: #e0ffff;
+$secondary-color: #ff8700;
+
+//Set text colour based on background
+@function set-text-color($color) {
+  @if (lightness($color) >70) {
+    @return #333;
+  } @else {
+    @return #fff;
+  }
+}
