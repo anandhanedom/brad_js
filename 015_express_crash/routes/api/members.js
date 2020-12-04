@@ -34,6 +34,7 @@ router.post('/', (req, res) => {
   } else {
     members.push(newMember);
     res.status(200).json(members);
+    // res.redirect('/');
   }
 });
 
