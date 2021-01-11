@@ -29,4 +29,6 @@
 2. For each operand, converts it to a boolean. If the result is false, stops and returns the original value of that operand.
 3. If all operands have been evaluated (i.e. all were truthy), returns the last operand.
 
-13 20 43 13 55
+### Labels for break/continue
+
+1. https://javascript.info/while-for#labels-for-break-continue
