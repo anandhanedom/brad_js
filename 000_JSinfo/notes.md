@@ -15,6 +15,8 @@
 
 3. alert( null == undefined ); // true
 
+4. ?? (nullish coalescing) returns the first defined value.
+
 ### The OR || operator does the following:
 
 1. Evaluates operands from left to right.
@@ -27,4 +29,6 @@
 2. For each operand, converts it to a boolean. If the result is false, stops and returns the original value of that operand.
 3. If all operands have been evaluated (i.e. all were truthy), returns the last operand.
 
-13 20
+### Labels for break/continue
+
+1. https://javascript.info/while-for#labels-for-break-continue
