@@ -1,3 +1,5 @@
+# JS Fundamentals
+
 ### 3 browser-specific functions : alert, prompt, confirm
 
 ### Numeric conversion rules:
