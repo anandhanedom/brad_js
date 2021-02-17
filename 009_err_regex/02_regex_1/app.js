@@ -4,7 +4,7 @@ re = /hello/;
 re = /hello/g; //All instances, global
 re = /hello/i; //i= case insensitive
 
-// console.log(re);
+console.log(re);
 // console.log(re.source);
 
 //exec()  -Return result in an array or null
