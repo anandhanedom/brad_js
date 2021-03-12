@@ -12,7 +12,7 @@ set1.add(100);
 // const set2 = new Set([1, true, 'string']);
 // console.log(set2);
 
-// console.log(set1);
+console.log(set1);
 
 //Get count
 // console.log(set1.size);
