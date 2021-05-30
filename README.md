@@ -1,5 +1,5 @@
 # brad_js
-JS Tutorial and Notes
+JS notes
 
 ### Regular Expressions
 * re.source
