@@ -1,5 +1,5 @@
 # brad_js
-JS notes
+JS notes and free code camp
 
 ### Regular Expressions
 * re.source
